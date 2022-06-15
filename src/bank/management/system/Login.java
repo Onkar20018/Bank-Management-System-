@@ -85,7 +85,7 @@ public class Login extends JFrame implements ActionListener{
                //    pinTextField.setText("sign is Done");
              }else if(ae.getSource()== sign_up) {
                      setVisible(false);  
-                     new SignUpOne().setVisible(true);
+                     new SignUpOne().setVisible(true); // To render to SIgnUp Page after user Presses Sign Up Button
              }
         }
      public static void main(String args[]){
