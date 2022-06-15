@@ -84,7 +84,8 @@ public class Login extends JFrame implements ActionListener{
              }else if(ae.getSource()== login){
                //    pinTextField.setText("sign is Done");
              }else if(ae.getSource()== sign_up) {
-                    
+                     setVisible(false);  
+                     new SignUpOne().setVisible(true);
              }
         }
      public static void main(String args[]){
