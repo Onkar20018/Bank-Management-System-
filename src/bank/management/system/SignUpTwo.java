@@ -14,7 +14,7 @@ public class SignUpTwo extends JFrame implements ActionListener{
       JComboBox religion,category,occupation,education ,income;
       String formno;
     SignUpTwo(String formno){
-                  formno= this.formno;
+                  this.formno= formno;
                   setTitle("Sign UP 2");             
                   setLayout(null);
               
@@ -200,7 +200,11 @@ public class SignUpTwo extends JFrame implements ActionListener{
                                      // Below we will be running a query to pass all the values taken from the user to the Database in My sql
  String query = "insert into signuptwo values('"+formno+"','"+sreligion+"','"+scategory+"','"+sincome+"','"+seducation+"','"+soccupation+"','"+span+"','"+saadhar+"','"+seniorcitizen+"','"+existingaccount+"')";
                                      c.s.executeUpdate(query); // This is to selct the query and pass it to Database. using object of class Conn(c) and using s from Conn
-                                 }
+                  
+                                          // Signup3 Object 
+                                          setVisible(false);
+                                          new SignUpThree(formno).setVisible(true);
+                                }
                                  
                               
                      }
