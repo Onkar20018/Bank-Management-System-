@@ -81,7 +81,11 @@ public class Transaction extends JFrame implements ActionListener {
          }else if(e.getSource()== fastcash){
              new FastCash(pinnumber).setVisible(true);
          }else if (e.getSource()== pinchange ){
+              setVisible(false);
              new PinChange(pinnumber).setVisible(true);
+         }else if (e.getSource()==balance){
+             setVisible(false);
+             new BalanceEnquiry(pinnumber);
          }
     }
     
