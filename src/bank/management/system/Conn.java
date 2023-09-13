@@ -13,7 +13,7 @@ public class Conn {
        public Conn(){
            try{
                           
-              c= DriverManager.getConnection("jdbc:mysql:///bankmanagementsystem","root","Omkar2001#"); // herewe provide the url of our database name with /// and name of database then username and password
+              c= DriverManager.getConnection("jdbc:mysql:///bankmanagementsystem","root","password"); // herewe provide the url of our database name with /// and name of database then username and password
               s= c.createStatement();// this is to create a statement 
               
            }
